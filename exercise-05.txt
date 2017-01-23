@@ -1,0 +1,4 @@
+CREATE TABLE Account (id int auto_increment primary key,account varchar(10));    
+CREATE TABLE AddressBook (id int auto_increment primary key,address varchar(10));    
+CREATE TABLE Entry (id int auto_increment primary key,entry varchar(10));    
+CREATE TABLE Test (id int auto_increment primary key,test varchar(10));    

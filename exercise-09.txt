@@ -1,0 +1,14 @@
+CREATE TABLE Chickens (id int auto_increment primary key,type ENUM ('rooster','hen','chicks'), birthday DATETIME);
+
+
+INSERT INTO Chickens VALUES (null, 'rooster', '2016-05-01');
+INSERT INTO Chickens VALUES (null, 'hen', '2016-01-01');
+INSERT INTO Chickens VALUES (null, 'chicks', '2016-01-01');
+
+
+
+SELECT * 
+FROM Chickens
+WHERE type = 'chicks'
+AND birthday = ''
+;

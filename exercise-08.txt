@@ -1,0 +1,8 @@
+CREATE TABLE Account (id int auto_increment primary key,email VARCHAR(255), password VARCHAR(40), createdOn DATETIME, modifiedOn DATETIME);
+
+
+CREATE TABLE AddressBook (id int auto_increment primary key, accountId INT, name VARCHAR(255), createdOn DATETIME, modifiedOn DATETIME);
+
+
+CREATE TABLE Entry (id int auto_increment primary key, addressBookId INT, firstName VARCHAR(255), lastName VARCHAR(255), birthday DATETIME, type ENUM('home','work','other'), subtype ENUM('phone','address','email'), contentLineOne VARCHAR(255), contentLineTwo VARCHAR(255), contentLineThree VARCHAR(255), contentLineFour VARCHAR(255), contentLineFive VARCHAR(255));
+
