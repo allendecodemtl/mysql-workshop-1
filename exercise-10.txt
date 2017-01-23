@@ -1,0 +1,4 @@
+CREATE TABLE Floors (id int auto_increment primary key, numOfWindows INT);
+
+CREATE TABLE Rooms (id int auto_increment primary key, floorID INT, numberOfPeople INT, kitchen BOOLEAN, type ENUM('room', 'janitor_closets', 'public_laundry', 'gym'), carpet BOOLEAN);
+
